@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -29,22 +29,22 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="text-white font-bold mb-4">Quick Links</h5>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-[#90e0ef] transition-colors">Home</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Services</Link></li>
-              <li><Link to="/about" className="hover:text-[#90e0ef] transition-colors">About Us</Link></li>
-              <li><Link to="/testimonials" className="hover:text-[#90e0ef] transition-colors">Testimonials</Link></li>
-              <li><Link to="/contact" className="hover:text-[#90e0ef] transition-colors">Book Now</Link></li>
+              <li><Link href="/" className="hover:text-[#90e0ef] transition-colors">Home</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Services</Link></li>
+              <li><Link href="/about" className="hover:text-[#90e0ef] transition-colors">About Us</Link></li>
+              <li><Link href="/testimonials" className="hover:text-[#90e0ef] transition-colors">Testimonials</Link></li>
+              <li><Link href="/contact" className="hover:text-[#90e0ef] transition-colors">Book Now</Link></li>
             </ul>
           </div>
 
           <div>
             <h5 className="text-white font-bold mb-4">Treatments</h5>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Root Canal Treatment</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Dental Implants</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Invisible Aligners</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Pediatric Dentistry</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Full Mouth Rehab</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Root Canal Treatment</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Dental Implants</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Invisible Aligners</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Pediatric Dentistry</Link></li>
+              <li><Link href="/services" className="hover:text-[#90e0ef] transition-colors">Full Mouth Rehab</Link></li>
             </ul>
           </div>
 

@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Service } from '../types';
 import { Sparkles, Activity, Smile, HeartPulse, ArrowRight, Zap, Bone, Baby, ShieldCheck, Siren } from 'lucide-react';
@@ -127,7 +129,7 @@ const Services: React.FC = () => {
                 {service.description}
               </p>
               <div className="mt-auto pt-4 border-t border-slate-50 w-full">
-                <Link to="/contact" className="inline-flex items-center text-[#0077b6] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all">
+                <Link href="/contact" className="inline-flex items-center text-[#0077b6] font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all">
                   Book Case Study <ArrowRight size={18} className="ml-2" />
                 </Link>
               </div>

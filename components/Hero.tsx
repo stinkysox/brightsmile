@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { ShieldCheck, Star } from 'lucide-react';
@@ -38,7 +40,7 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link to="/contact">
+              <Link href="/contact">
                 <Button className="w-full sm:w-auto shadow-xl shadow-[#0077b6]/20 transform hover:scale-105 transition-transform bg-[#0077b6] text-white py-4 px-8">
                   Book Appointment
                 </Button>

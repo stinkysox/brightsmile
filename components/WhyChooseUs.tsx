@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Award, ThumbsUp, HeartPulse, Clock, Sparkles } from 'lucide-react';

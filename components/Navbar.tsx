@@ -1,6 +1,9 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from './Button';
 import { NavItem } from '../types';
@@ -16,7 +19,7 @@ const navItems: NavItem[] = [
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,11 +30,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const isActive = (path: string) => {
-    if (path === '/' && location.pathname !== '/') return false;
-    return location.pathname === path;
+    if (path === '/' && pathname !== '/') return false;
+    return pathname === path;
   };
 
-  const isSticky = isScrolled || location.pathname !== '/';
+  const isSticky = isScrolled || pathname !== '/';
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-500 ${isSticky ? 'py-4' : 'py-8'}`}>
@@ -39,7 +42,7 @@ const Navbar: React.FC = () => {
         <div className={`rounded-3xl transition-all duration-500 border border-transparent ${isSticky ? 'glass px-8 py-4 shadow-2xl !border-white/20' : 'px-0 py-2'}`}>
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+            <Link href="/" className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
               <div className="w-10 h-10 bg-[#0077b6] rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
                 <span className="text-white font-bold text-2xl">B</span>
               </div>
@@ -53,7 +56,7 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <Link
                   key={item.label}
-                  to={item.href}
+                  href={item.href}
                   className={`font-semibold text-sm tracking-wide transition-all relative group ${isActive(item.href) ? 'text-[#0077b6]' : 'text-slate-600 hover:text-[#0077b6]'}`}
                 >
                   {item.label}
@@ -67,7 +70,7 @@ const Navbar: React.FC = () => {
                   </div>
                   <span className="text-sm font-bold">+91 99999 99999</span>
                 </a>
-                <Link to="/contact">
+                <Link href="/contact">
                   <Button size="sm" variant="primary" className="shadow-lg shadow-[#0077b6]/20">
                     Book Now
                   </Button>
@@ -103,7 +106,7 @@ const Navbar: React.FC = () => {
                 {navItems.map((item) => (
                   <Link
                     key={item.label}
-                    to={item.href}
+                    href={item.href}
                     className={`block px-4 py-3 text-base font-semibold rounded-xl transition-all ${isActive(item.href) ? 'text-[#0077b6] bg-[#90e0ef]/10' : 'text-slate-600 hover:text-[#0077b6] hover:bg-slate-50'}`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -111,7 +114,7 @@ const Navbar: React.FC = () => {
                   </Link>
                 ))}
                 <div className="pt-4 mt-2 border-t border-slate-100">
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <Button fullWidth className="shadow-lg shadow-[#0077b6]/20">Book Appointment</Button>
                   </Link>
                 </div>
