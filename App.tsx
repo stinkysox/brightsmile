@@ -23,7 +23,7 @@ const HomePage = () => (
     <SEO 
       title="Home" 
       description="Welcome to BrightSmile Dental. Comprehensive dental care including general, cosmetic, and emergency dentistry." 
-      canonical="https://brightsmile-omega.vercel.app/"
+      canonical="https://your-domain.com/"
     />
     <Hero />
     <Process />
@@ -42,7 +42,7 @@ const ServicesPage = () => (
     <SEO 
       title="Services" 
       description="Explore our dental services: General Dentistry, Cosmetic, Orthodontics, and Emergency Care." 
-      canonical="https://brightsmile-omega.vercel.app/services"
+      canonical="https://your-domain.com/services"
     />
     <Services />
     <FAQ />
@@ -54,7 +54,7 @@ const AboutPage = () => (
     <SEO 
       title="About Us" 
       description="Learn about our experienced team and modern dental facility dedicated to your comfort and health." 
-      canonical="https://brightsmile-omega.vercel.app/about"
+      canonical="https://your-domain.com/about"
     />
     <About />
     <Gallery />
@@ -66,7 +66,7 @@ const TestimonialsPage = () => (
     <SEO 
       title="Testimonials" 
       description="Read real stories from our satisfied patients about their dental transformations." 
-      canonical="https://brightsmile-omega.vercel.app/testimonials"
+      canonical="https://your-domain.com/testimonials"
     />
     <Testimonials />
     <Contact />
@@ -78,7 +78,7 @@ const FAQPage = () => (
     <SEO 
       title="FAQ" 
       description="Find answers to common questions about appointments, insurance, and dental procedures." 
-      canonical="https://brightsmile-omega.vercel.app/faq"
+      canonical="https://your-domain.com/faq"
     />
     <FAQ />
     <Contact />
@@ -90,7 +90,7 @@ const ContactPage = () => (
     <SEO 
       title="Contact Us" 
       description="Book an appointment today. Find our location, phone number, and office hours." 
-      canonical="https://brightsmile-omega.vercel.app/contact"
+      canonical="https://your-domain.com/contact"
     />
     <Contact />
     <FAQ />

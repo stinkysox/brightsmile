@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({ title, description, image = '/hero.png', canonical }) => {
   const siteName = 'BrightSmile Dental';
   const fullTitle = `${title} | ${siteName}`;
-  const baseUrl = 'https://brightsmile-omega.vercel.app'; // Change this to your actual domain
+  const baseUrl = 'https://your-domain.com'; // Replace with your actual domain (e.g., https://brightsmile-omega.vercel.app)
 
   const absoluteImageUrl = image.startsWith('http') ? image : `${baseUrl}${image}`;
   const absoluteCanonicalUrl = canonical ? (canonical.startsWith('http') ? canonical : `${baseUrl}${canonical}`) : undefined;
