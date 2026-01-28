@@ -38,23 +38,27 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h5 className="text-white font-bold mb-4">Services</h5>
+            <h5 className="text-white font-bold mb-4">Treatments</h5>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">General Dentistry</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Cosmetic Whitening</Link></li>
-              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Orthodontics</Link></li>
+              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Root Canal Treatment</Link></li>
               <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Dental Implants</Link></li>
-              <li><Link to="/contact" className="hover:text-[#90e0ef] transition-colors">Emergency Care</Link></li>
+              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Invisible Aligners</Link></li>
+              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Pediatric Dentistry</Link></li>
+              <li><Link to="/services" className="hover:text-[#90e0ef] transition-colors">Full Mouth Rehab</Link></li>
             </ul>
           </div>
 
           <div>
-            <h5 className="text-white font-bold mb-4">Legal</h5>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-[#90e0ef] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-[#90e0ef] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-[#90e0ef] transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-[#90e0ef] transition-colors">Accessibility</a></li>
+            <h5 className="text-white font-bold mb-4">Visit Us</h5>
+            <ul className="space-y-3 text-sm">
+              <li className="flex flex-col">
+                <span className="text-white font-semibold mb-1">Clinic Address</span>
+                <span className="text-slate-400">123, Medical Hub, Phase II, <br/>New Delhi, Delhi 110001</span>
+              </li>
+              <li className="flex flex-col">
+                <span className="text-white font-semibold mb-1">Office Hours</span>
+                <span className="text-slate-400">Mon - Sat: 10:00 AM - 8:00 PM <br/>Sunday: Emergency Only</span>
+              </li>
             </ul>
           </div>
 

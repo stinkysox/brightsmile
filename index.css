@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0077b6;
+  --color-brand-light: #90e0ef;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-slate-900 bg-slate-50;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/98 backdrop-blur-xl border border-white/20 shadow-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0077b6] to-[#00b4d8];
+  }
+}

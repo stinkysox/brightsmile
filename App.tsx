@@ -11,19 +11,39 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import SEO from './components/SEO';
+import WhyChooseUs from './components/WhyChooseUs';
+import Team from './components/Team';
+import BeforeAfter from './components/BeforeAfter';
+import Technology from './components/Technology';
 
 // Page Components (Composed)
 const HomePage = () => (
   <>
+    <SEO 
+      title="Home" 
+      description="Welcome to BrightSmile Dental. Comprehensive dental care including general, cosmetic, and emergency dentistry." 
+      canonical="https://brightsmile-dental.com/"
+    />
     <Hero />
     <Process />
+    <WhyChooseUs />
+    <Team />
+    <Technology />
+    <BeforeAfter />
     <Gallery />
+    <Testimonials />
     <Contact />
   </>
 );
 
 const ServicesPage = () => (
   <div className="pt-16">
+    <SEO 
+      title="Services" 
+      description="Explore our dental services: General Dentistry, Cosmetic, Orthodontics, and Emergency Care." 
+      canonical="https://brightsmile-dental.com/services"
+    />
     <Services />
     <FAQ />
   </div>
@@ -31,6 +51,11 @@ const ServicesPage = () => (
 
 const AboutPage = () => (
   <div className="pt-16">
+    <SEO 
+      title="About Us" 
+      description="Learn about our experienced team and modern dental facility dedicated to your comfort and health." 
+      canonical="https://brightsmile-dental.com/about"
+    />
     <About />
     <Gallery />
   </div>
@@ -38,6 +63,11 @@ const AboutPage = () => (
 
 const TestimonialsPage = () => (
   <div className="pt-16">
+    <SEO 
+      title="Testimonials" 
+      description="Read real stories from our satisfied patients about their dental transformations." 
+      canonical="https://brightsmile-dental.com/testimonials"
+    />
     <Testimonials />
     <Contact />
   </div>
@@ -45,6 +75,11 @@ const TestimonialsPage = () => (
 
 const FAQPage = () => (
   <div className="pt-16">
+    <SEO 
+      title="FAQ" 
+      description="Find answers to common questions about appointments, insurance, and dental procedures." 
+      canonical="https://brightsmile-dental.com/faq"
+    />
     <FAQ />
     <Contact />
   </div>
@@ -52,6 +87,11 @@ const FAQPage = () => (
 
 const ContactPage = () => (
   <div className="pt-16">
+    <SEO 
+      title="Contact Us" 
+      description="Book an appointment today. Find our location, phone number, and office hours." 
+      canonical="https://brightsmile-dental.com/contact"
+    />
     <Contact />
     <FAQ />
   </div>

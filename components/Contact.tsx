@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">Visit Us</p>
-                    <p className="text-slate-600 text-sm">123 Dental Ave, Suite 100<br/>New York, NY 10001</p>
+                    <p className="text-slate-600 text-sm">123, Medical Hub, Phase II,<br/>New Delhi, Delhi 110001</p>
                   </div>
                 </div>
 
@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">Call Us</p>
-                    <p className="text-slate-600 text-sm">(555) 123-4567<br/>Fax: (555) 123-4568</p>
+                    <p className="text-slate-600 text-sm">+91 99999 99999<br/>+91 11 1234 5678</p>
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">Email Us</p>
-                    <p className="text-slate-600 text-sm">hello@brightsmile.com</p>
+                    <p className="text-slate-600 text-sm">contact@brightsmile.in</p>
                   </div>
                 </div>
 
@@ -132,9 +132,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">Opening Hours</p>
-                    <p className="text-slate-600 text-sm">Mon - Fri: 8:00 AM - 6:00 PM</p>
-                    <p className="text-slate-600 text-sm">Sat: 9:00 AM - 2:00 PM</p>
-                    <p className="text-slate-600 text-sm">Sun: Closed</p>
+                    <p className="text-slate-600 text-sm">Mon - Sat: 10:00 AM - 8:00 PM</p>
+                    <p className="text-slate-600 text-sm">Sun: Emergency Appointments Only</p>
                   </div>
                 </div>
               </div>

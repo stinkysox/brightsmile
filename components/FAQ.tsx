@@ -4,24 +4,24 @@ import { FAQItem } from '../types';
 
 const faqs: FAQItem[] = [
   {
-    question: "Do you accept dental insurance?",
-    answer: "Yes! We accept most major PPO dental insurance plans. Our team will happily verify your benefits before your appointment to ensure you understand your coverage."
+    question: "Is Root Canal Treatment (RCT) painful?",
+    answer: "Not at all! With modern local anesthesia and rotary technology, a root canal is as comfortable as getting a filling. Most patients feel immediate relief from their toothache after the first session."
   },
   {
-    question: "What should I do in a dental emergency?",
-    answer: "If you are experiencing severe pain or have a broken tooth, call us immediately. We offer same-day emergency appointments to get you out of pain as quickly as possible."
+    question: "How much does a Dental Implant cost?",
+    answer: "Dental implant costs vary based on the brand and complexity of the case. We offer transparent pricing starting from competitive rates, and we use world-renowned implant systems with lifetime warranties."
   },
   {
-    question: "How often should I visit the dentist?",
-    answer: "The American Dental Association recommends visiting your dentist every six months for a routine checkup and cleaning to maintain optimal oral health."
+    question: "Can I get my treatment done in a single visit?",
+    answer: "Yes, for many procedures like Root Canals and Crowns, we offer 'Single-Sitting' treatments using advanced technology, saving you multiple visits and time."
   },
   {
-    question: "Do you treat children?",
-    answer: "Absolutely! We love seeing kids and helping them build healthy dental habits. We recommend bringing your child in for their first visit by their first birthday."
+    question: "Do you have digital X-ray facilities?",
+    answer: "Absolutely. We use RVG (Digital Radiography) which reduces radiation exposure by up to 90% compared to traditional X-rays and provides instant, high-resolution results."
   },
   {
-    question: "Do you offer financing options?",
-    answer: "Yes, we understand dental care is an investment. We offer flexible payment plans and work with financing partners like CareCredit."
+    question: "What sterilization standards do you follow?",
+    answer: "Your safety is our priority. We follow a strict 4-step sterilization protocol including ultrasonic cleaning and B-Class autoclaving, meeting international ISO standards."
   }
 ];
 
