@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://brightsmile-dental.com/</loc>
+    <loc>https://brightsmile-omega.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://brightsmile-dental.com/services</loc>
+    <loc>https://brightsmile-omega.vercel.app/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://brightsmile-dental.com/about</loc>
+    <loc>https://brightsmile-omega.vercel.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://brightsmile-dental.com/testimonials</loc>
+    <loc>https://brightsmile-omega.vercel.app/testimonials</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://brightsmile-dental.com/faq</loc>
+    <loc>https://brightsmile-omega.vercel.app/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://brightsmile-dental.com/contact</loc>
+    <loc>https://brightsmile-omega.vercel.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

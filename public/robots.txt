@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://brightsmile-dental.com/sitemap.xml
+Sitemap: https://brightsmile-omega.vercel.app/sitemap.xml
